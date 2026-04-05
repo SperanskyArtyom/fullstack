@@ -1,0 +1,39 @@
+# === .NET (Backend) ===
+[Bb]in/
+[Oo]bj/
+# Исключаем специфические папки Rider/Visual Studio
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Файлы настроек (секреты и локальные конфиги)
+appsettings.Development.json
+appsettings.Local.json
+
+# === Frontend (Node.js) ===
+node_modules/
+dist/
+build/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.development.local
+
+# === OS & IDE (Общее) ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+!.vscode/extensions.json
+
+# === Специфичное для вашего проекта ===
+# Если папка uploads предназначена для пользовательских файлов, 
+# их обычно не хранят в Git
+backend/wwwroot/uploads/*
+!backend/wwwroot/uploads/.gitkeep
